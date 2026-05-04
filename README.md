@@ -61,13 +61,15 @@ QuickMart/
 ### 1️⃣ Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/quickmart.git
+git clone https://github.com/Mitesh076/quickmart.git
 ```
 
 ### 2️⃣ Navigate to project folder:
 
 ```bash
 cd quickmart
+cd Backend
+cd Frontend 
 ```
 
 ### 3️⃣ Install dependencies:
@@ -79,7 +81,7 @@ npm install
 ### 4️⃣ Run the project:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ---
