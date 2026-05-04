@@ -98,7 +98,7 @@ JWT_SECRET=your_secret_key
 
 ## 📸 Screenshots
 
-## ![Project Screenshot](/Frontend/public/QMSS.png)
+## [Homepage](/Frontend/public/QMSS.png)
 
 ---
 
