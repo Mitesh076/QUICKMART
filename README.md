@@ -100,9 +100,8 @@ JWT_SECRET=your_secret_key
 
 _Add your project screenshots here_
 
-```
 ![Homepage](/Frontend/public/QMSS.png.png)
-```
+
 
 ---
 
