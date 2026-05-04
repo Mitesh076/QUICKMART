@@ -1,0 +1,524 @@
+:root {
+    --main-color: #2d465e;
+    --blue-color: #0a4db8;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--main-color);
+}
+
+.banner-section .content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.content h1 span {
+    color: var(--blue-color);
+}
+
+button:not(.btn-outline-secondary):not(.btn-outline-light):not(.btn-outline-primary):not(.btn-outline-danger):not(.btn-outline-success):not(.btn-outline-warning):not(.btn-outline-info):not(.btn-success):not(.btn-primary):not(.btn-secondary):not(.btn-danger):not(.btn-warning):not(.btn-info):not(.btn-light):not(.btn-dark),
+a.btn:not(.btn-outline-secondary):not(.btn-outline-light):not(.btn-outline-primary):not(.btn-outline-danger):not(.btn-outline-success):not(.btn-outline-warning):not(.btn-outline-info):not(.btn-success):not(.btn-primary):not(.btn-secondary):not(.btn-danger):not(.btn-warning):not(.btn-info):not(.btn-light):not(.btn-dark) {
+    background-color: var(--blue-color) !important;
+    color: white !important;
+}
+
+button:not(.btn-outline-secondary):not(.btn-outline-light):not(.btn-outline-primary):not(.btn-outline-danger):not(.btn-outline-success):not(.btn-outline-warning):not(.btn-outline-info):not(.btn-success):not(.btn-primary):not(.btn-secondary):not(.btn-danger):not(.btn-warning):not(.btn-info):not(.btn-light):not(.btn-dark):hover,
+a.btn:not(.btn-outline-secondary):not(.btn-outline-light):not(.btn-outline-primary):not(.btn-outline-danger):not(.btn-outline-success):not(.btn-outline-warning):not(.btn-outline-info):not(.btn-success):not(.btn-primary):not(.btn-secondary):not(.btn-danger):not(.btn-warning):not(.btn-info):not(.btn-light):not(.btn-dark):hover {
+    background-color: #4dabf7 !important;
+    color: white !important;
+}
+
+/* Specific class for blue buttons with hover effect */
+.btn-blue {
+    background-color: var(--blue-color) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn-blue:hover {
+    background-color: #4dabf7 !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Lighter tone hover effects for non-outline buttons */
+.btn-primary:hover {
+    background-color: #4dabf7 !important;
+    border-color: #339af0 !important;
+}
+
+.btn-danger:hover {
+    background-color: #ff6b6b !important;
+    border-color: #ff5252 !important;
+}
+
+.btn-success:hover {
+    background-color: #20c997 !important;
+    border-color: #1abc9c !important;
+    box-shadow: 0 4px 8px rgba(32, 201, 151, 0.3) !important;
+}
+
+.btn-warning:hover {
+    background-color: #ffd43b !important;
+    border-color: #ffcc02 !important;
+}
+
+.btn-info:hover {
+    background-color: #3bc9db !important;
+    border-color: #22b8cf !important;
+}
+
+.btn-secondary:hover {
+    background-color: #868e96 !important;
+    border-color: #6c757d !important;
+}
+
+.btn-light:hover {
+    background-color: #ffffff !important;
+    border-color: #f8f9fa !important;
+}
+
+.btn-dark:hover {
+    background-color: #495057 !important;
+    border-color: #343a40 !important;
+}
+
+.discount {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: var(--blue-color);
+    color: white;
+    width: 70px;
+    /* height: 50px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.discount .percent {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.content .promo-badge {
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.floating-product {
+    position: absolute;
+    top: 20%;
+    left: -10px;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 35%;
+    padding: 10px;
+}
+
+.floating-product-2 {
+    position: absolute;
+    bottom: 20%;
+    right: -40px;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 35%;
+    opacity: 1;
+    padding: 10px;
+}
+
+.floating-product img,
+.floating-product-2 img {
+    height: 50px;
+}
+
+.floating-product .product-info h4,
+.floating-product-2 .product-info h4 {
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+.floating-product .product-info .price,
+.floating-product-2 .product-info .price {
+    color: var(--blue-color);
+    font-weight: 700;
+}
+
+.features-section {
+    background-color: #f5f8fc;
+    padding: 50px 0;
+}
+
+.features-section h3 {
+    font-size: 20px;
+}
+
+.features-section .icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.product-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+}
+
+.product-card .product-info .product-title a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.product-card .product-info .product-price .current-price {
+    color: var(--blue-color);
+    font-weight: 700;
+}
+
+.product-card .star {
+    color: #ffc107;
+}
+
+.mainBtn {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.map {
+    width: 100%;
+}
+
+.product-card .category {
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.product-card .product-image img {
+    height: 250px;
+}
+
+.product-card .viewicon {
+    position: absolute;
+    right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    border-radius: 100px;
+}
+
+.signup-section {
+    /* height: 80vh; */
+}
+
+.footer-section ul li {
+    list-style-type: none;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* Cart Page */
+.cart-section .cart-item {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+
+}
+
+.cart-section .product-image {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    height: 80px;
+}
+
+
+
+.cart-section .cart-item .product-image img {
+    height: 80px;
+}
+
+.cart-section .product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 5px;
+    font-size: 0.8125rem;
+    color:
+        color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.product-meta span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+
+    border-radius: 0.375rem;
+    border: 1px solid color-mix(in srgb, var(--main-color), transparent 90%);
+}
+
+.product-detail .remove-product a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.cart-items .cart-header h5{
+    font-size: 15px;
+}
+.summary-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.cart-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    font-size: 0.9375rem;
+    position: relative;
+}
+
+.cart-summary .summary-item .shipping-options {
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.cart-summary .disc .summary-value {
+    background-color: rgba(40, 167, 69, 0.1);
+    font-weight: 600;
+    color: var(--heading-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+}
+
+.cart-summary .summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.75rem 0;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    background-color: rgb(241, 247, 249);
+
+}
+
+.cart-summary .summary-total .summary-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    position: relative;
+}
+
+/* Navigation Active State */
+.navbar-nav .nav-link.active {
+    color: var(--blue-color) !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+
+/* Quantity Controls */
+.quantity-controls .btn {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.quantity-controls .btn:hover {
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+    color: white;
+}
+
+.quantity-controls .btn:active,
+.quantity-controls .btn:focus,
+.quantity-controls .btn.active {
+    background-color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+    color: white !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.quantity-controls .btn:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.quantity-controls .form-control {
+    border-color: var(--main-color);
+}
+
+/* Unique outline button styling based on function */
+
+/* Cancel buttons - Grey */
+.btn-outline-secondary {
+    background-color: transparent !important;
+    border-color: #6c757d !important;
+    color: #6c757d !important;
+}
+.btn-outline-secondary:hover {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: white !important;
+}
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.btn-outline-secondary:focus {
+    background-color: #5c636a !important;
+    border-color: #565e64 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5) !important;
+}
+
+/* Edit buttons - Blue */
+.btn-outline-primary {
+    background-color: transparent !important;
+    border-color: var(--blue-color) !important;
+    color: var(--blue-color) !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+    color: white !important;
+}
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary:focus {
+    background-color: #4dabf7 !important;
+    border-color: #4dabf7 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(10, 77, 184, 0.25) !important;
+}
+
+/* View/Admin panel buttons - Light */
+.btn-outline-light {
+    background-color: transparent !important;
+    border-color: #f8f9fa !important;
+    color: #f8f9fa !important;
+}
+.btn-outline-light:hover {
+    background-color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+.btn-outline-light:active,
+.btn-outline-light.active,
+.btn-outline-light:focus {
+    background-color: #e2e6ea !important;
+    border-color: #dae0e5 !important;
+    color: #212529 !important;
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5) !important;
+}
+
+/* Delete buttons - Red */
+.btn-outline-danger {
+    background-color: transparent !important;
+    border-color: #dc3545 !important;
+    color: #dc3545 !important;
+}
+.btn-outline-danger:hover {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+.btn-outline-danger:active,
+.btn-outline-danger.active,
+.btn-outline-danger:focus {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5) !important;
+}
+
+/* Success/Continue buttons - Green */
+.btn-outline-success {
+    background-color: transparent !important;
+    border-color: #28a745 !important;
+    color: #28a745 !important;
+}
+.btn-outline-success:hover {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: white !important;
+}
+.btn-outline-success:active,
+.btn-outline-success.active,
+.btn-outline-success:focus {
+    background-color: #218838 !important;
+    border-color: #1e7e34 !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5) !important;
+}
+
+/* Warning buttons - Orange */
+.btn-outline-warning {
+    background-color: transparent !important;
+    border-color: #ffc107 !important;
+    color: #ffc107 !important;
+}
+.btn-outline-warning:hover {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #212529 !important;
+}
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.btn-outline-warning:focus {
+    background-color: #e0a800 !important;
+    border-color: #d39e00 !important;
+    color: #212529 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5) !important;
+}
+
+/* Info buttons - Cyan */
+.btn-outline-info {
+    background-color: transparent !important;
+    border-color: #17a2b8 !important;
+    color: #17a2b8 !important;
+}
+.btn-outline-info:hover {
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+    color: white !important;
+}
+.btn-outline-info:active,
+.btn-outline-info.active,
+.btn-outline-info:focus {
+    background-color: #138496 !important;
+    border-color: #117a8b !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5) !important;
+}
